@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section-left {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  img {
+    width: 70%;
+  }
+}
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  background-image: url("../../../assets/jpg/rubik_background.jpg");
+  padding: 1rem;
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    h1 {
+      color: #fff;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: #fff;
+      text-align: center;
+      width: 70%;
+    }
+    button {
+      width: 150px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      margin: 14px 0 0 20px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
