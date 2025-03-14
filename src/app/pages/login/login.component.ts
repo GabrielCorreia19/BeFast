@@ -15,4 +15,8 @@ export class LoginComponent {
   goToCadastro() {
     this.router.navigate(['/cadastro']);
   }
+
+  gotoHome() {
+    this.router.navigate(['/']);
+  }
 }

@@ -20,6 +20,7 @@ header {
   img {
     width: 180px;
     margin-left: 1rem;
+    cursor: pointer;
   }
 }
 
@@ -154,14 +155,16 @@ header {
     padding: 0.2rem 0.4rem;
   }
   .form-login {
-    width: 90%;
+    width: 95%;
     overflow-y: auto;
     overflow-x: hidden;
     height: 80%;
   }
   .separator-container {
+    width: 100%;
+    justify-content: center;
     .separator {
-      width: 120px;
+      width: 100%;
     }
   }
 }
