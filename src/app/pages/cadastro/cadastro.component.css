@@ -26,20 +26,19 @@ header {
 .backToLogin {
   display: flex;
   align-items: center;
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 12px;
   cursor: pointer;
   position: absolute;
-  top: 100px;
-  left: 30px;
+  top: 10px;
+  right: 50px;
   gap: 4px;
 
   &:hover {
-    background-color: #000;
-    color: #fff;
+    opacity: 0.8;
   }
 }
 
@@ -49,6 +48,7 @@ header {
   align-items: center;
   background-color: #f1f1f1;
   width: 400px;
+  overflow-y: auto;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -57,7 +57,6 @@ header {
   h1 {
     color: #000;
     font-size: 1.4rem;
-    margin-bottom: 1rem;
   }
 }
 
@@ -91,5 +90,90 @@ header {
     &:hover {
       opacity: 0.9;
     }
+  }
+}
+
+.separator-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+
+  .separator {
+    width: 150px;
+    height: 2px;
+    background: #d2d2d2;
+  }
+
+  .separator-text {
+    color: #999;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+  }
+}
+
+.google-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+
+  img {
+    margin-right: 0.3rem;
+  }
+
+  span {
+    color: #000;
+    font-size: 1rem;
+
+    &:hover {
+      color: #d00000;
+    }
+  }
+
+  &:hover {
+    position: relative;
+    top: -2px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 40px;
+    img {
+      width: 100px;
+    }
+  }
+  .backToLogin {
+    top: 5px;
+    right: 15px;
+    padding: 0.2rem 0.4rem;
+  }
+  .form-login {
+    width: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 80%;
+  }
+  .separator-container {
+    .separator {
+      width: 120px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .form-login {
+    width: 500px;
+  }
+}
+
+@media (max-height: 600px) {
+  .form-login {
+    height: 470px;
   }
 }

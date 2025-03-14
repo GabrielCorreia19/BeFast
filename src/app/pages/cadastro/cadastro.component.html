@@ -1,14 +1,14 @@
 <header>
   <img src="png/logo.png" alt="Logo" />
+  <button class="backToLogin" (click)="backToLogin()">
+    <mat-icon>arrow_back </mat-icon>
+    VOLTAR
+  </button>
 </header>
-<button class="backToLogin" (click)="backToLogin()">
-  <mat-icon>arrow_back </mat-icon>
-  VOLTAR
-</button>
+
 <div class="container">
   <form class="form-login">
     <h1>Vamos criar sua conta</h1>
-    <p>Preencha os campos abaixo para criar sua conta</p>
     <div class="section-input">
       <label for="email">Digite seu nome completo</label>
       <input type="text" />
@@ -20,8 +20,17 @@
       <input type="password" id="password" name="password" />
       <label for="password">Confirme sua senha</label>
       <input type="password" id="password" name="password" />
-
       <button>Entrar</button>
     </div>
+    <div class="separator-container">
+      <div class="separator"></div>
+      <span class="separator-text">ou</span>
+      <div class="separator"></div>
+    </div>
+
+    <button class="google-login">
+      <img src="svg/google.svg" alt="Google" />
+      <span>Entrar com Google</span>
+    </button>
   </form>
 </div>
